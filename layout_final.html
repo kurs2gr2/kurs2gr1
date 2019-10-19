@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 <style type="text/css">
-<!--
+
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -157,7 +157,14 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	border-bottom-style: solid;
 	border-bottom-color: #060;
 }
--->
+.form {
+  border-color: #00CC00;
+
+}
+
+.form2 {
+	color: #00CC00;
+}
 </style></head>
 
 <body>
@@ -184,7 +191,48 @@ ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background
 	  <!-- osoby -->
 	</div>
 	<div> 
-	 <!-- formularz -->
+		<h1> 2011 Eco-Tour Sign-up Form</h1>
+		<p>To sign up for the tour, please fill out the following fields:</p>
+		<br>
+		<form method="get" action="StronaDocelowa" class="form">
+		<fieldset class="form">
+			<legend class="form2">Your Contact Information</legend>
+			Name:<input type="text" name="name">
+			<br>
+			Email:<input type="text" name="email">
+			<br>
+		</fieldset>	
+		</form>
+		
+		<form method="get" action="StronaDocelowa" class="form">
+		<fieldset class="form">
+			<legend class="form2">Customer Account Login</legend>
+			<p>Your itinerary and travel plans can be accessed online using the email added above and custom password. In the following fields you can set and confirm your password.</p>
+			<br>
+			<p><i>Your password must contain at least 8 characters, as least two of them must be numbers.</i></p>
+			Password:<input type="password" name="password">
+			<br>
+			Confirm Password:<input type="password" name="password">
+
+		</fieldset>	
+		</form>
+		
+		<form method="get" action="StronaDocelowa" class="form">
+		<fieldset class="form">
+			<legend class="form2">2011 Eco-Tour</legend>
+			
+			<p>Three tentactive dates have been selected for the 2011 Eco-Tour. Please select one that you prefer:</p>
+				<input type="radio" name="date" value="march"> 6-27.03.2011  <br>
+				<input type="radio" name="date" value="june"> 5-26.06.2011 <br>
+				<input type="radio" name="date" value="october"> 2-23.10.2011 <br>
+			<br>
+			<p>How many people will be traveling?</p>
+				<input type="radio" name="people" value="1" > One  <br>
+				<input type="radio" name="people" value="2" > Two <br>
+				<input type="radio" name="people" value="3" > Three <br>
+		</fieldset>	
+		</form>
+		
 	</div>
 	<div> 
 	  <!-- wycieczki -->
